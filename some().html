@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+var nums = [1, 2, 3, 4];
+function testOne(num) {
+    return num >= 2;
+}
+function testTwo() {
+    document.getElementById("test").innerHTML = nums.some(testOne);
+}
+</script>
+</head>
+<body>
+	<h1 id="test"> some方法</h1>
+<button onclick="testTwo()">使用 some方法</button>
+
+
+</body>
+</html>
