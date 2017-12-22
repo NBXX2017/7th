@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	var nums = [1, 2, 3, 4];
+    function testOne(a, b) {
+    return a + b;
+}
+function testTwo() {
+    document.getElementById("test").innerHTML = nums.reduce(testOne);
+}
+
+		</script>
+</head>
+<body>
+	<h1 id="test">reduce方法</h1>
+<button onclick="testTwo()">使用reduce方法</button>
+
+
+</body>
+</html>

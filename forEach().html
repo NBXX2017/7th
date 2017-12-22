@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+
+var nums = [1, 2, 3, 4];
+function testOne(){
+	document.getElementById("test").innerHTML 
+    =nums; 
+}
+function testTwo() {
+      nums.forEach(testOne); 
+}
+
+    </script>
+</head>
+<body>
+	<h1 id="test">forEach方法</h1>
+<button onclick="testTwo()">使用forEach方法</button>
+
+
+</body>
+</html>
