@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	var nums = [1, 2, 3, 4];
+function testOne(num) {
+    return num == 2;
+}
+function testTwo() {
+    document.getElementById("test").innerHTML = nums.filter(testOne);
+}
+	</script>
+</head>
+<body>
+	<h1 id="test">filter方法</h1>
+	<button onclick="testTwo()">使用filter方法</button>
+</body>
+</html>
